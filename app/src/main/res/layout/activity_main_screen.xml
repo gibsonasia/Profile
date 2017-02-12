@@ -10,7 +10,8 @@
         android:layout_height="@dimen/image_height_width"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="@dimen/white_space"
-        android:src="@drawable/blankprofile" />
+        android:src="@drawable/blankprofile"
+        />
 
     <RelativeLayout
         android:id="@+id/hrz_img_layout"
@@ -26,7 +27,9 @@
             android:layout_marginBottom="@dimen/text_margins"
             android:layout_marginRight="@dimen/icon_margins"
             android:scaleType="fitXY"
-            android:src="@drawable/heart" />
+            android:src="@drawable/heart"
+            android:clickable="true"
+            />
 
         <TextView
             android:id="@+id/tv_one"
@@ -46,7 +49,9 @@
             android:layout_marginRight="@dimen/icon_margins"
             android:layout_toRightOf="@id/iv_heart"
             android:scaleType="fitXY"
-            android:src="@drawable/email" />
+            android:src="@drawable/email"
+            android:clickable="true"
+            />
 
         <TextView
             android:id="@+id/tv_two"
@@ -67,7 +72,9 @@
             android:layout_marginRight="@dimen/icon_margins"
             android:layout_toRightOf="@id/iv_email"
             android:scaleType="fitXY"
-            android:src="@drawable/addressbook" />
+            android:src="@drawable/addressbook"
+            android:clickable="true"
+            />
 
         <TextView
             android:id="@+id/tv_three"
@@ -88,7 +95,9 @@
             android:layout_marginRight="@dimen/icon_margins"
             android:layout_toRightOf="@id/iv_address_bk"
             android:scaleType="fitXY"
-            android:src="@drawable/logout" />
+            android:src="@drawable/logout"
+            android:clickable="true"
+            />
 
         <TextView
             android:id="@+id/tv_four"
