@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Profile</string>
+    <string name="heart_txt">Button 1</string>
+    <string name="email_txt">Button 2</string>
+    <string name="addresbk_txt">Button 3</string>
+    <string name="logout_txt">Button 4</string>
 </resources>
