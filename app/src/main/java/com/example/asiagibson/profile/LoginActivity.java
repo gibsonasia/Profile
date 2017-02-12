@@ -33,22 +33,22 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent;
-                intent = new Intent(LoginActivity.this, MainScreenActivity.class);
-                startActivity(intent);
 
-//                if(userN.equals("")){
-//                    Toast.makeText(submit.getContext(), "Enter a Username", Toast.LENGTH_LONG).show();
-//
-//                }
-//
-//               else if (password.equals("")){
-//                    Toast.makeText(submit.getContext(), "Enter a Password", Toast.LENGTH_LONG).show();
-//                }
-//                else {
-////                    intent = new Intent(this, ProfileActivity.class);
-////                    this.startActivity(intent);
-//
-//                }
+                if(!userN.getText().toString().isEmpty() && !password.getText().toString().isEmpty()) {
+                    intent = new Intent(LoginActivity.this, MainScreenActivity.class);
+                    startActivity(intent);
+
+                }
+
+                if(userN.getText().toString().isEmpty()){
+                    Toast.makeText(submit.getContext(), "Enter a Username", Toast.LENGTH_LONG).show();
+
+                }
+
+               else if (password.getText().toString().isEmpty()){
+                    Toast.makeText(submit.getContext(), "Enter a Password", Toast.LENGTH_LONG).show();
+                }
+
             }
         });
     }

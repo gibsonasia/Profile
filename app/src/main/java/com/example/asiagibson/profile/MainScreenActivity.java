@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.zip.Inflater;
 
@@ -37,13 +38,28 @@ public class MainScreenActivity extends ActionBarActivity  {
     int iconList[] = {R.drawable.heart, R.drawable.email,
             R.drawable.addressbook, R.drawable.logout};
 
-    Button heartB, emailB, addressbkB, logoutB;
-    TextView hTV, eTV, abkTV, logoutTv;
+    ImageView heartB, emailB, addressbkB, logoutB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
+
+        heartB = (ImageView) findViewById(R.id.iv_heart);
+        emailB =(ImageView) findViewById(R.id.iv_email);
+        heartB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(heartB.getContext(), "Selected Heart Activity", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        emailB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(emailB.getContext(), "Selected Message Activity", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         listView = (ListView) findViewById(R.id.drawerlist);
