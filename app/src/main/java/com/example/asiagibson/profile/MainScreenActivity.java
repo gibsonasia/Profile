@@ -2,6 +2,7 @@ package com.example.asiagibson.profile;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
@@ -28,13 +29,14 @@ import static com.example.asiagibson.profile.R.array.list_items;
  * Created by asiagibson on 2/12/17.
  */
 
-public class MainScreenActivity extends ActionBarActivity  {
+public class MainScreenActivity extends ActionBarActivity {
+    ActionBarDrawerToggle mDrawerToggle;
 
     NavViewAdapter adapter;
     DrawerLayout drawerLayout;
     ListView listView;
 
-    String iconText [] = {"Button 1", "Button 2", "Button 3","Button 4"};
+    String iconText[] = {"Button 1", "Button 2", "Button 3", "Button 4"};
     int iconList[] = {R.drawable.heart, R.drawable.email,
             R.drawable.addressbook, R.drawable.logout};
 
@@ -46,7 +48,10 @@ public class MainScreenActivity extends ActionBarActivity  {
         setContentView(R.layout.activity_main_screen);
 
         heartB = (ImageView) findViewById(R.id.iv_heart);
-        emailB =(ImageView) findViewById(R.id.iv_email);
+        emailB = (ImageView) findViewById(R.id.iv_email);
+        addressbkB = (ImageView) findViewById(R.id.iv_address_bk);
+        logoutB = (ImageView) findViewById(R.id.iv_logout);
+
         heartB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,12 +66,32 @@ public class MainScreenActivity extends ActionBarActivity  {
             }
         });
 
+        addressbkB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent;
+          //          intent = new Intent(MainScreenActivity.this, .class);
+          //          startActivity(intent);
+
+                }
+        });
+
+        logoutB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                Toast.makeText(emailB.getContext(), "Selected Logout", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         listView = (ListView) findViewById(R.id.drawerlist);
-        adapter = new NavViewAdapter(getApplicationContext(), iconList,iconText);
+        adapter = new NavViewAdapter(getApplicationContext(), iconList, iconText);
         listView.setAdapter(adapter);
 
     }
+
 }
 
 

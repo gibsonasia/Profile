@@ -18,8 +18,6 @@ public class NavViewAdapter extends BaseAdapter {
     Context mContext;
     String iconText [];
     int iconList[];
-//            = {R.drawable.heart, R.drawable.email,
-//            R.drawable.addressbook, R.drawable.logout};
 
     public NavViewAdapter(Context appContext, int[] iconList, String [] iconText) {
         this.mContext = appContext;

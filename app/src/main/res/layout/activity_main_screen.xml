@@ -119,13 +119,19 @@
 
     <RelativeLayout
 
+        android:id="@+id/left_drawer"
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:orientation="horizontal">
+        android:orientation="vertical" >
 
         <!--Place your ImageView here-->
 
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/drawer_item"/>
         <ListView
 
             android:id="@+id/drawerlist"
