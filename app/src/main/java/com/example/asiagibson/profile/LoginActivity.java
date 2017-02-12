@@ -3,6 +3,7 @@ package com.example.asiagibson.profile;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,7 +13,7 @@ import android.widget.Toast;
  * Created by asiagibson on 2/12/17.
  */
 
-public class LoginActivity extends Activity {
+public class LoginActivity extends AppCompatActivity {
 
     EditText userN;
     EditText password;
@@ -32,20 +33,22 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent;
+                intent = new Intent(LoginActivity.this, MainScreenActivity.class);
+                startActivity(intent);
 
-                if(userN.equals("")){
-                    Toast.makeText(submit.getContext(), "Enter a Username", Toast.LENGTH_LONG).show();
-
-                }
-
-               else if (password.equals("")){
-                    Toast.makeText(submit.getContext(), "Enter a Password", Toast.LENGTH_LONG).show();
-                }
-                else {
-//                    intent = new Intent(this, ProfileActivity.class);
-//                    this.startActivity(intent);
-
-                }
+//                if(userN.equals("")){
+//                    Toast.makeText(submit.getContext(), "Enter a Username", Toast.LENGTH_LONG).show();
+//
+//                }
+//
+//               else if (password.equals("")){
+//                    Toast.makeText(submit.getContext(), "Enter a Password", Toast.LENGTH_LONG).show();
+//                }
+//                else {
+////                    intent = new Intent(this, ProfileActivity.class);
+////                    this.startActivity(intent);
+//
+//                }
             }
         });
     }

@@ -27,7 +27,7 @@ import static com.example.asiagibson.profile.R.array.list_items;
  * Created by asiagibson on 2/12/17.
  */
 
-public class MainScreenActivity extends ActionBarActivity {
+public class MainScreenActivity extends ActionBarActivity  {
 
     NavViewAdapter adapter;
     DrawerLayout drawerLayout;
