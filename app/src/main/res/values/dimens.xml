@@ -7,7 +7,7 @@
     <dimen name="white_space">200dp</dimen>
     <dimen name="icon_margins">10dp</dimen>
     <dimen name="text_margins">10dp</dimen>
-    <dimen name="top_list_view">200dp</dimen>\
+    <dimen name="top_list_view">200dp</dimen>
     <dimen name="nav_icon_h_w">40dp</dimen>
     <dimen name="nav_left_pad">5dp</dimen>
 </resources>
