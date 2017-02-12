@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Profile</string>
+    <string name="settings_text">Setting - #</string>
+    <string name="setting_header">Number of ITEMS: integer.MAX_VALUE</string>
 </resources>
