@@ -12,26 +12,25 @@ import android.widget.TextView;
  * Created by asiagibson on 2/12/17.
  */
 
-public class SettingsAdapter extends RecyclerView.Adapter<SetttingsVH> {
-    LayoutInflater inflater;
-
-    Integer [] sText;
+public class SettingsAdapter extends BaseAdapter{
 
     @Override
-    public SetttingsVH onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = inflater.from(parent.getContext()).
-                inflate(R.layout.custom_row_settings,parent,false);
-        return new SetttingsVH(view);
+    public int getCount() {
+        return 0;
     }
 
     @Override
-    public void onBindViewHolder(SetttingsVH holder, int position) {
-       // Integer holderText =  sText.get(position);
-
+    public Object getItem(int i) {
+        return null;
     }
 
     @Override
-    public int getItemCount() {
-        return Integer.MAX_VALUE;
+    public long getItemId(int i) {
+        return 0;
+    }
+
+    @Override
+    public View getView(int i, View view, ViewGroup viewGroup) {
+        return null;
     }
 }
