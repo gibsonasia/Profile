@@ -19,5 +19,8 @@
     <string name="user_name">Username</string>
     <string name="user_pw">Password</string>
     <string name="submit">Submit</string>
+  
+  <string name="settings_text">Setting - #</string>
+    <string name="setting_header">Number of ITEMS: integer.MAX_VALUE</string>
 
 </resources>
