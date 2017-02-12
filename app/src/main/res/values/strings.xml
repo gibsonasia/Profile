@@ -1,5 +1,26 @@
 <resources>
     <string name="app_name">Profile</string>
-    <string name="settings_text">Setting - #</string>
+
+    <string name="heart_txt">Button 1</string>
+    <string name="email_txt">Button 2</string>
+    <string name="addresbk_txt">Button 3</string>
+    <string name="logout_txt">Button 4</string>
+
+    <string-array name="list_items">
+        <item>Button 1</item>
+        <item>Button 2</item>
+        <item>Button 3</item>
+        <item>Button 4</item>
+
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="user_name">Username</string>
+    <string name="user_pw">Password</string>
+    <string name="submit">Submit</string>
+  
+  <string name="settings_text">Setting - #</string>
     <string name="setting_header">Number of ITEMS: integer.MAX_VALUE</string>
+
 </resources>
