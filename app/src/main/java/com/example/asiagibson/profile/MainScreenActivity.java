@@ -3,6 +3,7 @@ package com.example.asiagibson.profile;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 
@@ -16,7 +17,11 @@ import android.widget.TextView;
  * Created by asiagibson on 2/12/17.
  */
 
-public class MainScreenActivity extends AppCompatActivity {
+public class MainScreenActivity extends ActionBarActivity {
+
+     DrawerLayout drawerLayout;
+     ListView listView;
+
 
     Button heartB, emailB, addressbkB, logoutB;
     TextView hTV, eTV, abkTV, logoutTv;
@@ -26,6 +31,8 @@ public class MainScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
 
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        listView = (ListView) findViewById(R.id.drawerlist);
     }
 }
 
